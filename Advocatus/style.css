@@ -1,0 +1,1228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0;
+}
+header
+{   
+    height: 110px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+}
+#logo
+{
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    width: 170px;
+    height: 18px;
+    margin-left: 64px;
+    margin-top: 32px;
+    cursor: pointer;
+}
+#logo span
+{
+    color: #e8bf5d;
+}
+nav
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 500;
+    font-family: "Open Sans";
+    width: 761px;
+    height: fit-content;
+    display: flex;
+    gap: 23px;
+    margin-top: 32px;
+}
+nav a:first-child
+{
+    margin-left: 28px;
+}
+nav a
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.3px;
+}
+nav a:after
+{
+    display: block;
+    content: '';
+    border-bottom: 5px #e8bf5d solid;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+nav a:hover:after
+{
+    transform: scaleX(1);
+}
+#hero
+{
+    margin-top: 110px;
+    width: 100%;
+    height: 840px;
+    background-image: url("img/stock-photo-shadow-177211577.png");
+    background-position-y: bottom;
+    position: relative;
+    background-position-x: center;
+}
+.heading
+{
+    position: absolute;
+    z-index: 2;
+    /* left: 493px; */
+    left: 25.7%;
+    top: 534px;
+}
+.heading::before
+{
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #e8bf5d;
+    height: 41%;
+    width: 2px;
+    top: 56%;
+    margin-left: -18px;
+    transform: translateY(-50%);
+}
+.heading h2
+{
+    letter-spacing: 2.6px;
+    font-size: 65px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Playfair Display";
+}
+.heading p
+{
+    font-family: "Open Sans";
+    font-size: 31px;
+    letter-spacing: 1.24px;
+    color: #ffffff;
+    margin-top: 0px;
+    line-height: 40%;
+}
+#hero button
+{
+    position: absolute;
+    z-index: 2;
+    width: 181px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #e8bf5d;
+    border-style: none;
+
+    font-size: 17px;
+    line-height: 31px;
+    color: black;
+    font-weight: 700;
+    font-family: "Playfair Display";
+
+    /* left: 1262px; */
+    left: 65.7%;
+    top: 628px;
+    transition: 0.3s;
+}
+#hero button:hover
+{
+    background-color: #ffedc3;
+    transition: 0.3s;
+}
+a, button
+{
+    cursor: pointer;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+section
+{
+    position: relative;
+}
+.no
+{
+    position: absolute;
+    font-size: 194px;
+    letter-spacing: 8px;
+    line-height: 133px;
+    color: #f3f3f3;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-top: 0;
+    left: 19.5%;
+    z-index: 2;
+}
+#about
+{
+    min-height: 534px;
+}
+#about, #practis, #attorney, #clients, #publications, #faq, #contact
+{
+    padding-top: 80px;
+    width: 100%;
+}
+#about .heading, #practis .heading, #attorney .heading, #clients .heading, #publications .heading, #faq .heading, #contact .heading
+{
+    position: relative;
+    top: -35px;
+    left: 20.6%;
+    width: 415px;
+}
+#about .heading h2, #about .heading p, #attorney .heading h2, #attorney .heading p, #publications .heading h2, #publications .heading p, #contact .heading h2, #contact .heading p
+{
+    color: black ;
+}
+#about .heading h2, #practis .heading h2, #attorney .heading h2, #clients .heading h2, #publications .heading h2, #faq .heading h2, #contact .heading h2
+{
+    font-size: 33px;
+    letter-spacing: 0.3px;
+    line-height: 73px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Playfair Display";
+}
+#about .heading p, #practis .heading p, #attorney .heading p, #clients .heading p, #publications .heading p, #faq .heading p, #contact .heading p
+{
+    width: 778px;
+    max-width: 47vw;
+    height: 52px;
+    letter-spacing: -0.1px;
+    font-size: 23px;
+    line-height: 30px;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Playfair Display";
+}
+#about .heading::before, #practis .heading::before, #attorney .heading::before, #clients .heading::before, #publications .heading::before, #faq .heading::before, #contact .heading::before
+{
+    height: 105px;
+    margin-left: -22px;
+    transform: translateY(-45px);
+}
+#expertise
+{
+    margin-left: 12px;
+}
+#expertise p
+{
+    max-width: 520px;
+    min-height: 197px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 31.5px;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+.year
+{
+    font-size: 21px !important;
+    letter-spacing: 1px;
+    line-height: 31px;
+    color: #111111;
+    font-weight: 700 !important;
+    font-family: "Open Sans";
+    margin-right: 40px;
+}
+.row p
+{
+    height: 45px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Open Sans";
+    display: inline-block;
+}
+#about-details
+{
+    display: flex;
+    margin-left: 19.5%;
+}
+.history-details
+{
+    max-width: 475px;
+}
+#about h3
+{
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    margin-top: 4px;
+}
+.row
+{
+    margin-bottom: -20px;
+}
+.row:first-child
+{
+    margin-top: -10px;
+}
+.row:last-child
+{
+    margin-top: -30px;
+}
+#practis
+{
+    background-color: #111111;
+    min-height: 666px;
+}
+#practis .heading p, #clients .heading p, #faq .heading p
+{
+    color: #b9b9b9
+}
+#practis .no, #faq .no
+{
+    /* color: #1d1d1d; */
+    color: #ffffff;
+    opacity: 0.05;
+}
+#clients .no
+{
+    color: #272727;
+}
+#practis .heading h2, #clients .heading h2, #faq .heading h2
+{
+    color: #ffffff;
+}
+#practisGrid p
+{
+    max-width: 386px;
+    min-height: 110px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+#practisGrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1100px;
+    margin-left: 30%;
+    margin-top: 40px;
+    row-gap: 14px;
+}
+#practisGrid h3
+{
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    margin-left: -5px;
+    padding-top: 4px;
+    margin-bottom: 16px;
+}
+#private-client::before, #labour::before, #cyber-sequre::before, #estate::before
+{
+    display: block;
+    content: '';
+    position: absolute;
+}
+#private-client::before
+{
+    background-image: url("img/privateClient.png");
+    height: 38px;
+    width: 58px;
+    top: 41%;
+    margin-left: -18px;
+    transform: translateX(-115%);
+    background-repeat: no-repeat;
+}
+#labour::before
+{
+    background-image: url("img/labour.png");
+    height: 42px;
+    width: 42px;
+    top: 40.5%;
+    margin-left: -20px;
+    transform: translateX(-115%);
+    background-repeat: no-repeat;
+}
+#cyber-sequre::before
+{
+    background-image: url("img/cyberSequre.png");
+    height: 43px;
+    width: 49px;
+    top: 68.4%;
+    margin-left: -20px;
+    transform: translateX(-113%);
+    background-repeat: no-repeat;
+}
+#estate::before
+{
+    background-image: url("img/estate.png");
+    height: 33px;
+    width: 42px;
+    top: 69.1%;
+    margin-left: -20px;
+    transform: translateX(-113%);
+    background-repeat: no-repeat;
+}
+#attorney
+{
+    min-height: 668px;
+}
+#attorneys-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 400px; */
+    margin-left: 19.5%;
+    margin-top: 42px;
+    gap: 28px;
+}
+#attorneys-flex div
+{
+    width: 271px;
+}
+#attorneys-flex img
+{
+    width: 271px;
+    height: 301px;
+}
+#attorneys-flex h3
+{
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 31px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    margin-bottom: 0;
+}
+#attorneys-flex p
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-top: 0;
+}
+#adam, #lina, #jems, #linister
+{
+    object-fit: none;
+}
+#adam
+{
+    object-position: -81px -23px;
+}
+#lina
+{
+    object-position: -612px -82px;
+}
+#jems
+{
+    object-position: -277px 0px;
+}
+#linister
+{
+    object-position: -19px -15px;
+}
+#clients
+{
+    width: 100%;
+    min-height: 668px;
+    background-color: #111111;
+    background-image: url("img/stock-photo-152247655.png");
+}
+#square
+{
+    position: relative;
+    width: 370px;
+    height: 306px;
+    background-color: #e8bf5d;
+    margin-left: 20.5%;
+    margin-top: 36px;
+}
+#square img
+{
+    width: 370px;
+    height: 306px;
+    object-fit: none;
+    object-position: -82px -32px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+#client-comment
+{
+    max-width: 600px;
+    min-height: 450px;
+}
+#client-comment p
+{
+    font-size: 14px;
+    letter-spacing: 0.55px;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-top: 40px;
+}
+#client-comment p::before
+{
+    display: block;
+    content: '“';
+    position: absolute;
+    top: 44%;
+    margin-left: -50px;
+    transform: translateY(-50%);
+    opacity: 0.251;
+    font-size: 96px;
+    letter-spacing: 4px;
+    line-height: 213px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Playfair Display";
+}
+#client-comment h3
+{
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+#client-comment h4
+{
+    font-size: 14px;
+    letter-spacing: 0.55px;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-top: -6px;
+}
+#clients-flex
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+#pagination
+{
+    width: 90.4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: -92px;
+}
+.page
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+}
+.page:not(.page-active):hover
+{
+    background-color: #ffffffd1;
+    transition: 0.3s;
+}
+.page-active
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+#publications-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 19.5%;
+    margin-top: 42px;
+    gap: 30px;
+}
+.publication
+{
+    width: 370px;
+    border-bottom: #e8bf5d 3px solid;
+    padding-bottom: 5px;
+}
+.publication img
+{
+    object-fit: none;
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+.publication h3
+{
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    line-height: 31px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    margin-bottom: -4px;
+    cursor: pointer;
+}
+.publication h4
+{
+    margin-top: 0;
+    color: #111111;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.publication span
+{
+    color: #666666;
+    font-style: italic;
+    font-family: "Open Sans";
+    letter-spacing: 1px;
+}
+.publication div
+{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.publication p
+{
+    width: 380px;
+    height: 140px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 31px;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-top: 4px;
+}
+.comments-n-share
+{
+    margin-top: 34px;
+    margin-left: 2px;
+}
+.comments-n-share p
+{
+    position: relative;
+    font-size: 16px;
+    line-height: 31px;
+    color: #111111;
+    height: auto;
+    width: auto;
+    margin-left: 24px;
+    cursor: pointer;
+}
+.comments-n-share p:first-child::before
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 44%;
+    margin-left: -26px;
+    transform: translateY(-50%);
+    background-image: url("img/comments.png");
+    width: 19px;
+    height: 16px;
+}
+.comments-n-share p:last-child::before
+{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 44%;
+    margin-left: -21px;
+    transform: translateY(-50%);
+    background-image: url("img/share.png");
+    width: 17px;
+    height: 15px;
+}
+#publications
+{
+    min-height: 932px;
+}
+.publication:first-child img
+{
+    object-position: -44px;
+}
+.publication:nth-child(2) img
+{
+    object-position: -51px 0px;
+}
+.publication:last-child img
+{
+    object-position: -110px 0px;
+}
+#faq
+{
+    width: 100%;
+    min-height: 668px;
+    background-color: #111111;
+}
+#faq-flex, #questions, .question
+{
+    display: flex;
+}
+#questions
+{
+    flex-direction: column;
+    /* width: 566px; */
+    min-width: 36.5%;
+}
+#faq-flex, .question
+{
+    flex-direction: row;
+}
+#faq-flex
+{
+    margin-left: 19.6%;
+    margin-top: 40px;
+    gap: 34px;
+    flex-wrap: wrap;
+}
+#answer p
+{
+    max-width: 420px;
+    height: auto;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 31px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+#answer
+{
+    max-width: 410px;
+    height: 218px;
+    border-radius: 3px;
+    filter: drop-shadow(0px 12px 20px rgba(216, 178, 87, 0.32));
+    background-color: #e8bf5d;
+    padding: 44px;
+    margin-top: 26px;
+    padding-top: 18px;
+}
+.question p
+{
+    font-size: 14px;
+    letter-spacing: 0.57px;
+    line-height: 13px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    margin-top: 23px;
+}
+.question.question-active p
+{
+    color: #e8bf5d;
+}
+.question.question-active img
+{
+    width: 12px;
+    height: 4px;
+    margin-top: 24px;
+}
+.question img
+{
+    width: 12px;
+    height: 12px;
+    object-fit: none;
+    margin-top: 22px;
+    margin-right: 4px;
+}
+.question
+{
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.question::after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    /* transform: rotate(90deg); */
+    /* margin-left: 0; */
+    /* height: 566px; */
+    width: 1px;
+    background-color: #e8bf5d;
+    margin-top: 60px;
+    width: 100%;
+    height: 1px;
+}
+#contact
+{
+    min-height: 760px;
+}
+#contact-flex
+{
+    display: flex;
+    flex-direction: row;
+
+    max-width: 870px;
+    min-height: 490px;
+    border-radius: 3px;
+    filter: drop-shadow(0px 12px 20px rgba(104,86,42,0.1));
+    background-color: #ffffff;
+    margin-top: 40px;
+    margin-left: 27.3%;
+    padding: 48px;
+    box-sizing: border-box;
+    gap: 50px;
+}
+#inputs form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    position: relative;
+    width: 350px;
+}
+#inputs form input, #inputs form textarea
+{
+    border: 0;
+    position: relative;
+}
+#inputs hr
+{
+    position: absolute;
+    /* width: 350px; */
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+    opacity: 0.2;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+}
+#inputs form input::placeholder, textarea::placeholder{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 31px;
+    color: #b9b9b9;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Open Sans";
+}
+#inputs
+{
+    margin-top: 43px;
+}
+textarea
+{
+    margin-top: -10px;
+    resize: none;
+}
+.input-n-hr, .textarea-n-hr
+{
+    position: relative;
+}
+.textarea-n-hr hr
+{
+    margin-top: 10px !important;
+}
+input[type="submit"]
+{
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #e8bf5d;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    line-height: 31px;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    margin-left: 4px;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input[type="submit"]:hover
+{
+    background-color: #ffedc3;
+    transition: 0.3s;
+}
+.input-n-hr input, .textarea-n-hr textarea
+{
+    width: 100%;
+}
+form input:focus, form textarea:focus
+{
+    outline: none;
+}
+#map
+{
+    width: 363px;
+    height: 363px;
+    background-color: #e8bf5d;
+    margin-top: 28px;
+    position: relative;
+}
+#map::after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 363px;
+    height: 363px;
+    background-image: url(img/map.png);
+    top: -24px;
+    right: -24px;
+    background-position: 453px -476px;
+}
+footer
+{
+    height: 81px;
+    background-color: #111111;
+    display: flex;
+    padding-left: 19.5%;
+    gap: 53.7%;
+}
+footer p
+{
+    font-size: 16px;
+    line-height: 45px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+footer span
+{
+    font-family: "Playfair Display";
+    color: #b5b5b5;
+}
+#facebook
+{
+    width: 9px;
+    height: 16px;
+}
+#twitter
+{
+    width: 14px;
+    height: 13px;
+}
+#google
+{
+    width: 16px;
+    height: 16px;
+}
+#instagram
+{
+    width: 15px;
+    height: 15px;
+}
+#social
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+hr
+{
+    border: 0;
+}
+#lines 
+{
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+#lines #relative
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-left: 19.5%;
+    gap: 5%
+}
+.lines-dark
+{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    margin-left: 19.5%;
+    gap: 6.3%;
+    top: 0;
+    width: calc(100% - 19.5%);
+}
+.lines-dark .line
+{
+    opacity: 0.05;
+    width: 1px;
+    height: 100%;
+    background-color: #ebebeb;
+}
+#lines .line 
+{
+    background: #000000;
+    width: 1px;
+    height: 100vh;
+    opacity: 0.05;
+}
+#lines #relative .line:nth-child(3)
+{
+    margin-left: 105px;
+}
+#lines #relative .line:nth-child(4)
+{
+    margin-left: 70px;
+}
+#lines #relative .line:nth-child(5)
+{
+    margin-left: 35px;
+}
+#lines #relative .line:nth-child(7)
+{
+    margin-left: 105px;
+}
+#lines #relative .line:nth-child(8)
+{
+    margin-left: 75px;
+}
+
+.lines-dark .line:nth-child(2)
+{
+    margin-left: 75px;
+}
+.lines-dark .line:nth-child(3)
+{
+    margin-left: 100px;
+}
+.lines-dark .line:nth-child(5)
+{
+    margin-left: 35px;
+}
+.lines-dark .line:nth-child(6)
+{
+    margin-left: 75px;
+}
+.lines-dark .line:nth-child(7)
+{
+    margin-left: 100px;
+}
+.lines-dark, #lines
+{
+    pointer-events: none;
+}
+#open-menu, #close-menu
+{
+    position: absolute;
+    cursor: pointer;
+    top: 35px;
+    right: 20px;
+    display: none;
+}
+#open-menu
+{
+    width: 35px;
+    height: 35px;
+}
+#close-menu
+{
+    width: 60px;
+    height: 60px;
+}
+@media screen and (max-width: 1200px)
+{
+    #practisGrid
+    {
+        grid-template-columns: 1fr;
+    }
+    #attorneys-flex, #about-details, #contact-flex, #faq-flex
+    {
+        flex-direction: column;
+    }
+    #about .heading p, #practis .heading p, #attorney .heading p, #clients .heading p, #publications .heading p, #faq .heading p, #contact .heading p
+    {
+        height: auto;
+        font-size: 18px;
+    }
+    #history div:not(.row)
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #history .row
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #practisGrid h3::before
+    {
+        top: auto;
+    }
+    #inputs, #contact-flex a
+    {
+        display: flex;
+        justify-content: center;
+    }
+    #contact-flex
+    {
+        max-width: none;
+        margin-left: 0;
+    }
+    #about .heading, #practis .heading, #attorney .heading, #clients .heading, #publications .heading, #faq .heading, #contact .heading
+    {
+        width: min-content;
+    }
+    #hero .heading
+    {
+        top: 460px;
+    }
+    #hero button
+    {
+        left: 24%;
+        top: 740px;
+    }
+    #clients-flex
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #client-comment p::before
+    {
+        top: 69.5%;
+    }
+    #faq-flex,#attorneys-flex, #publications-flex
+    {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .publication
+    {
+        width: 100%;
+    }
+    .publication img
+    {
+        width: 100%;
+    }
+    .publication p
+    {
+        width: auto;
+        height: auto;
+    }
+    #attorneys-flex img
+    {
+        object-position: top;
+        object-fit: cover;
+        width: 100%;
+    }
+    #attorneys-flex div
+    {
+        width: 100%;
+    }
+    nav
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        background-color: #ffffff;
+        font-size: 1.5em;
+        transition: 0.2s;
+    }
+    nav.closed
+    {
+        right: -100%;
+        transition: 0.5s;
+    }
+    nav a:first-child
+    {
+        margin-left: 0;
+    }
+    #open-menu, #close-menu
+    {
+        display: block;
+    }
+    #logo
+    {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 610px) 
+{
+    #map::after
+    {
+        right: -42px;
+    }
+    #answer
+    {
+        height: auto;
+    }
+    footer
+    {
+        padding-left: 0;
+        gap: 0;
+        justify-content: space-around;
+    }
+    #square
+    {
+        margin-left: 0;
+    }
+    #square img
+    {
+        width: 100%;
+    }
+    #about-details
+    {
+        margin-left: 5%;
+    }
+    .heading::before
+    {
+        top: 56%;
+    }
+    #about .heading::before, #practis .heading::before, #attorney .heading::before, #clients .heading::before, #publications .heading::before, #faq .heading::before, #contact .heading::before
+    {
+        height: 170px;
+        transform: translateY(-85px);
+    }
+}
