@@ -1189,6 +1189,7 @@ hr
     #clients
     {
         min-height: 668px;
+        height: unset;
     }
     #client-comment
     {
