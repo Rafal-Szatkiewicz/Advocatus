@@ -455,7 +455,7 @@ section
 #clients
 {
     width: 100%;
-    min-height: 668px;
+    height: 668px;
     background-color: #111111;
     background-image: url("img/stock-photo-152247655.png");
 }
@@ -481,7 +481,6 @@ section
 #client-comment
 {
     max-width: 600px;
-    min-height: 450px;
 }
 #client-comment p
 {
@@ -1186,6 +1185,14 @@ hr
     #logo
     {
         margin-left: 0;
+    }
+    #clients
+    {
+        min-height: 668px;
+    }
+    #client-comment
+    {
+        min-height: 450px;
     }
 }
 @media screen and (max-width: 610px) 
